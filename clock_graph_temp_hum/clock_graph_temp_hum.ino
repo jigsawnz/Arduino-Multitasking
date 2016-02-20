@@ -266,7 +266,7 @@ void storeTemp()
 //********************************************************************
 void drawTempGraph()
 {
-  drawGraph()
+  drawGraph();
   display.setCursor( 9, 54 );
   display.print( "Temp:" );
   display.print( ( float ) dht.readTemperature(), 1 );
@@ -281,7 +281,7 @@ void drawTempGraph()
 //********************************************************************
 void drawHumGraph()
 {
-  drawGraph()
+  drawGraph();
   display.setCursor( 9, 54 );
   display.print( "Hum: " );
   display.print( ( float ) dht.readHumidity(), 1 );
